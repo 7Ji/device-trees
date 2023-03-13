@@ -1,0 +1,7 @@
+/dts-v1/;
+/plugin/;
+
+/* eMMC */
+&sd_emmc_c {
+    max-frequency = <25000000>;
+};
