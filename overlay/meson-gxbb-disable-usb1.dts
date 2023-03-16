@@ -1,0 +1,10 @@
+/dts-v1/;
+/plugin/;
+
+&usb1_phy {
+	status = "disabled";
+};
+
+&usb1 {
+	status = "disabled";
+};

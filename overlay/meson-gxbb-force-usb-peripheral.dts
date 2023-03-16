@@ -1,0 +1,6 @@
+/dts-v1/;
+/plugin/;
+
+&usb0 {
+	dr_mode = "peripheral";
+};

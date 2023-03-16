@@ -1,0 +1,7 @@
+/dts-v1/;
+/plugin/;
+
+/* SDIO Wireless Card */
+&sd_emmc_a {
+	status = "disabled";
+};
