@@ -1,0 +1,6 @@
+/dts-v1/;
+/plugin/;
+
+&{/leds/sys_led} {
+	default-state = "off";
+};
