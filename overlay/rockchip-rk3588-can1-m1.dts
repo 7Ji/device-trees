@@ -1,0 +1,8 @@
+/dts-v1/;
+/plugin/;
+
+&{/pinctrl/can1} {
+	status = "okay";
+	pinctrl-names = "default";
+	pinctrl-0 = <&can1m1_pins>;
+};
