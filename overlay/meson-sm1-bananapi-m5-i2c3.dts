@@ -1,0 +1,9 @@
+/dts-v1/;
+/plugin/;
+
+/* BPI-M5 CON1: SDA pin 27, SCL pin 28. */
+&i2c3 {
+	pinctrl-0 = <&i2c3_sda_a_pins>, <&i2c3_sck_a_pins>;
+	pinctrl-names = "default";
+	status = "okay";
+};

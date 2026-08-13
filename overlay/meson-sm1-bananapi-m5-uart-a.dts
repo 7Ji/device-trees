@@ -1,0 +1,9 @@
+/dts-v1/;
+/plugin/;
+
+/* BPI-M5 CON1: TX pin 8, RX pin 10. */
+&uart_A {
+	pinctrl-0 = <&uart_a_pins>;
+	pinctrl-names = "default";
+	status = "okay";
+};

@@ -1,0 +1,9 @@
+/dts-v1/;
+/plugin/;
+
+/* PWM_C on BPI-M5 CON1 pin 7 (GPIOX_5), pwmchip channel 0. */
+&pwm_cd {
+	pinctrl-0 = <&pwm_c_x5_pins>;
+	pinctrl-names = "default";
+	status = "okay";
+};

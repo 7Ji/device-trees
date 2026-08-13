@@ -1,0 +1,9 @@
+/dts-v1/;
+/plugin/;
+
+/* PWM_F on BPI-M5 CON1 pin 36 (GPIOH_5), pwmchip channel 1. */
+&pwm_ef {
+	pinctrl-0 = <&pwm_f_h_pins>;
+	pinctrl-names = "default";
+	status = "okay";
+};

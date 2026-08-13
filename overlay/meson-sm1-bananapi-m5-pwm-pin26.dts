@@ -1,0 +1,9 @@
+/dts-v1/;
+/plugin/;
+
+/* PWM_E on BPI-M5 CON1 pin 26 (GPIOX_16), pwmchip channel 0. */
+&pwm_ef {
+	pinctrl-0 = <&pwm_e_pins>;
+	pinctrl-names = "default";
+	status = "okay";
+};

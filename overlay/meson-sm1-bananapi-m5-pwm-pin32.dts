@@ -1,0 +1,9 @@
+/dts-v1/;
+/plugin/;
+
+/* PWM_B on BPI-M5 CON1 pin 32 (GPIOX_19), pwmchip channel 1. */
+&pwm_ab {
+	pinctrl-0 = <&pwm_b_x19_pins>;
+	pinctrl-names = "default";
+	status = "okay";
+};

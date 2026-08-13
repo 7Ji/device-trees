@@ -1,0 +1,17 @@
+/dts-v1/;
+/plugin/;
+
+/* BPI-M5 CON1: MOSI 19, MISO 21, SCLK 23, CS0 24. */
+&spicc0 {
+	#address-cells = <1>;
+	#size-cells = <0>;
+	pinctrl-0 = <&spicc0_x_pins>, <&spicc0_ss0_x_pins>;
+	pinctrl-names = "default";
+	status = "okay";
+
+	spidev@0 {
+		compatible = "rohm,dh2228fv";
+		reg = <0>;
+		spi-max-frequency = <10000000>;
+	};
+};

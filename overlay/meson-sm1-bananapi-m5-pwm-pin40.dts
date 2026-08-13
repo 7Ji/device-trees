@@ -1,0 +1,8 @@
+/dts-v1/;
+/plugin/;
+
+/* PWM_AO_C on BPI-M5 CON1 pin 40 (GPIOAO_4), pwmchip channel 0. */
+&pwm_AO_cd {
+	pinctrl-0 = <&pwm_ao_c_4_pins>, <&pwm_ao_d_e_pins>;
+	pinctrl-names = "default";
+};

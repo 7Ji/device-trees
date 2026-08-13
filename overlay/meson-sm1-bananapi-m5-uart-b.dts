@@ -1,0 +1,9 @@
+/dts-v1/;
+/plugin/;
+
+/* BPI-M5 CON1: TX pin 33, RX pin 15; conflicts with PWM on those pins. */
+&uart_B {
+	pinctrl-0 = <&uart_b_pins>;
+	pinctrl-names = "default";
+	status = "okay";
+};
