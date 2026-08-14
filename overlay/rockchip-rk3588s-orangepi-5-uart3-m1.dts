@@ -1,0 +1,9 @@
+/dts-v1/;
+/plugin/;
+
+/* Orange Pi 5 26-pin header: TX pin 8, RX pin 10. */
+&uart3 {
+	pinctrl-names = "default";
+	pinctrl-0 = <&uart3m1_xfer>;
+	status = "okay";
+};

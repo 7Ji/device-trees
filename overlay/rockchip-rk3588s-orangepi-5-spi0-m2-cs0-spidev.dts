@@ -1,0 +1,17 @@
+/dts-v1/;
+/plugin/;
+
+/* Orange Pi 5 26-pin header: MOSI 19, MISO 21, SCLK 23, CS0 24. */
+&spi0 {
+	#address-cells = <1>;
+	#size-cells = <0>;
+	pinctrl-names = "default";
+	pinctrl-0 = <&spi0m2_cs0 &spi0m2_pins>;
+	status = "okay";
+
+	spidev@0 {
+		compatible = "rohm,dh2228fv";
+		reg = <0>;
+		spi-max-frequency = <10000000>;
+	};
+};

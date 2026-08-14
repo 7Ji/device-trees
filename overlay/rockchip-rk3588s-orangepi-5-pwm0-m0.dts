@@ -1,0 +1,9 @@
+/dts-v1/;
+/plugin/;
+
+/* Enable PWM0 using its M0 pin multiplexing. */
+&pwm0 {
+	pinctrl-names = "default";
+	pinctrl-0 = <&pwm0m0_pins>;
+	status = "okay";
+};

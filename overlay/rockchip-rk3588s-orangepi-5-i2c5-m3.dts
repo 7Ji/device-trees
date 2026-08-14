@@ -1,0 +1,9 @@
+/dts-v1/;
+/plugin/;
+
+/* Orange Pi 5 26-pin header: SDA pin 3, SCL pin 5. */
+&i2c5 {
+	pinctrl-names = "default";
+	pinctrl-0 = <&i2c5m3_xfer>;
+	status = "okay";
+};
