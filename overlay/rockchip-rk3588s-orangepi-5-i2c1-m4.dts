@@ -1,0 +1,8 @@
+/dts-v1/;
+/plugin/;
+
+&i2c1 {
+	pinctrl-names = "default";
+	pinctrl-0 = <&i2c1m4_xfer>;
+	status = "okay";
+};
